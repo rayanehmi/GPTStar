@@ -12,7 +12,8 @@ from sc2.units import Units
 from sc2.unit import Unit
 
 
-""" WARNING : Python 3.10 required (match/case) """
+""" WARNING : Python 3.10 required (match/case) 
+WARNING 2 : Sometimes, the bot takes a while to get going after the game has started. Be patient !"""
 
 
 # Modify this to match your config. You can also use environment variables instead, but they are broken in my setup lol
@@ -50,8 +51,7 @@ class ChatGPTAgent(BotAI):
                 team_only=False)
 
         # Make a joke sometimes :)
-        if random.random() < 1:
-            prompt = [{"role": "user", "content": "Make a StarCraft II joke"}]
+        if random.random() < 0.01:
             answer = openai.ChatCompletion.create(model="gpt-3.5-turbo",
                                                   messages=[{"role": "user", "content": "Make a StarCraft II joke"}])
             await self.client.chat_send(answer.choices[0].message.content, team_only=False)
