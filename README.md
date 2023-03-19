@@ -10,6 +10,9 @@ Observations are made about the game and a list of possible actions is generated
 
 Here is a [video example](https://streamable.com/od2bpx) of ChatGPT performing basic actions.
 
+GPT-3.5 is a very strange player : it loves supply depots ! GPT-4's game sense is sharper but I don't have an API key for it yet...
+
+
 ## How to...
 ### Install the maps
 Follow [this guide](https://github.com/Blizzard/s2client-proto#downloads) to install the maps. Abyssal Reef is in the 2017 season 1 pack. 
