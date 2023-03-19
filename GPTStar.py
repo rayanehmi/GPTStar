@@ -14,14 +14,6 @@ from sc2.unit import Unit
 
 """ WARNING : Python 3.10 required (match/case) """
 
-"""
-This project's goal is to see how good a Large Language Model can play StarCraft II on a macro scale, without any fine-
-tuning. This python script launches a 1v1 game on the map "Abyssal Reef" against an in-game AI. Observations are made
-about the game and a list of possible actions is generated. This data is then sent to ChatGPT using OpenAI's API.
-The answer is parsed into its number and reasoning. The number is mapped to its corresponding hardcoded set of actions.
-The reasoning is sent to SC2's chat.
-"""
-
 
 # Modify this to match your config. You can also use environment variables instead, but they are broken in my setup lol
 openai.api_key_path = "openai.txt"
